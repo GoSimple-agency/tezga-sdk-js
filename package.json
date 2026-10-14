@@ -51,7 +51,7 @@
     "url": "https://github.com/GoSimple-agency/tezga-sdk-js/issues"
   },
   "devDependencies": {
-    "@types/node": "^22.10.0",
+    "@types/node": "^26.6.5",
     "typescript": "^5.7.2"
   }
 }
