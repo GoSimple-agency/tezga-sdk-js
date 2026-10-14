@@ -1,0 +1,57 @@
+{
+  "name": "tezga-sdk",
+  "version": "0.1.0",
+  "description": "Official JavaScript/TypeScript SDK for the Tezga Fiscal API: issue and fiscalize legal receipts in Serbia (eKasa / SUF) over a single REST API, no L-PFR hardware. A GoSimple product.",
+  "keywords": [
+    "tezga",
+    "fiscalization",
+    "fiscal-receipt",
+    "serbia",
+    "ekasa",
+    "suf",
+    "v-pfr",
+    "e-invoice",
+    "sef",
+    "pos",
+    "sdk",
+    "typescript",
+    "gosimple"
+  ],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "NOTICE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "author": "GoSimple",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://tezgafiskal.com/en/fiscalization-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GoSimple-agency/tezga-sdk-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GoSimple-agency/tezga-sdk-js/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
