@@ -1,11 +1,13 @@
 <p align="center">
-  <a href="https://tezgafiskal.com"><picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg">
-    <img alt="Tezga" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup.svg" width="240">
-  </picture></a>
+  <a href="https://tezgafiskal.com"><img alt="Tezga eKasa" src="https://raw.githubusercontent.com/GoSimple-agency/.github/main/profile/assets/tezga-lockup-dark.svg" width="280"></a>
 </p>
 
 # Tezga Fiscal API — JavaScript / TypeScript SDK
+
+[![npm](https://img.shields.io/npm/v/tezga-sdk?color=00313e)](https://www.npmjs.com/package/tezga-sdk)
+[![CI](https://github.com/GoSimple-agency/tezga-sdk-js/actions/workflows/ci.yml/badge.svg)](https://github.com/GoSimple-agency/tezga-sdk-js/actions/workflows/ci.yml)
+[![Node.js](https://img.shields.io/badge/node-%E2%89%A522-339933)](https://nodejs.org)
+[![Docs](https://img.shields.io/badge/docs-tezgafiskal.com-00313e)](https://tezgafiskal.com/en/fiscalization-api)
 
 Issue and fiscalize **legal fiscal receipts in Serbia (eKasa / SUF)** from Node.js, with
 one `npm install` and an API key. No L-PFR hardware, no signing code on your side: you
@@ -23,7 +25,7 @@ Full documentation: [Fiscalization API](https://tezgafiskal.com/en/fiscalization
 npm install tezga-sdk
 ```
 
-Requires Node.js 20 or newer.
+Requires Node.js 22 or newer.
 
 ## Quickstart
 

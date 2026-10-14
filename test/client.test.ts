@@ -168,6 +168,14 @@ test("a network failure becomes a non-retryable TezgaError with status 0", async
   );
 });
 
+test("a real refused connection surfaces as status 0, not a crash", async () => {
+  const c = new TezgaClient({ apiKey: "tzg_test", baseUrl: "http://127.0.0.1:9", timeoutMs: 3000 });
+  await assert.rejects(
+    () => c.getTaxLabels(),
+    (err: unknown) => err instanceof TezgaError && err.status === 0,
+  );
+});
+
 test("every request carries an abort signal for the timeout", async () => {
   const { c, calls } = client();
   await c.getTaxLabels();
